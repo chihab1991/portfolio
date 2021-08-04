@@ -1,0 +1,44 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* loader styling */
+.loader-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  color: #fff;
+}
+.loader-wrapper h1 {
+  font-size: 50px;
+}
+.loader {
+  height: 60px;
+  width: 60px;
+  margin-top: 20px;
+  border-radius: 50%;
+  border-top: 2px solid #fff;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  animation: loader 0.5s infinite linear;
+}
+@keyframes loader {
+  to {
+    rotate: 360deg;
+  }
+}
