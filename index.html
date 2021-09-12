@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chergui Chihab Iddine | Web Developer</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/5972c938ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,9 +15,11 @@
     <h1>Loading...</h1>
     <div class="loader"></div>
   </div>
+  <!-- display Screen width-->
+  <p class="width"></p>
   <!-- navbar start -->
   <div class="navbar">
-    <div class="nav wrapper">
+    <div class="nav container">
       <div class="right-nav">
         <ul>
           <li><a href="#intro">Home</a></li>
@@ -28,72 +32,96 @@
       </div>
       <div class="left-nav">
         <ul>
-          <li><a href=""><i class="fab fa-github-square fa-2x"></i></a></li>
-          <li><a href=""><i class="fab fa-linkedin fa-2x"></i></a></li>
+          <li><a href="https://github.com/chihab1991"><i class="fab fa-github-square fa-2x"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/chihab-iddine-elhoci-chergui-885883210/"><i class="fab fa-linkedin fa-2x"></i></a></li>
         </ul>
       </div>
       
     </div>
+
+    <!-- hamburger nav -->
+    <div class="ham-nav">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#latest-work">Latest Work</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
   <!-- navbar end -->
   <!-- intro start -->
   <div id="intro" class="container">
-    <h1>Hi I'm<br>Chihab.<br>I'm a <br>Designer<br>Web Developer.</h1>
-    <img src="./img/undraw_Code_thinking_re_gka2.svg" alt="" srcset="">
+    <h1 >Hi I'm<br>Chihab.<br>I'm a <br>Designer<br>Web Developer.</h1>
+    <img data-aos="fade-up-right" src="./img/undraw_Code_thinking_re_gka2.svg" alt="" srcset="">
   </div>
   <!-- intro end -->
 
   <!-- about-me start -->
-  <div id="about-me" class="container">
-    <img src="./img/favpng_avatar-user-software-developer.png" alt="" srcset="">
-    <h2>Hi I'm chihab. Nice to meet you.</h2>
-    <p>I'm a freelancer Working remotely on projects for clients from all over the world</p>
-    <p>I have a multiple set of skills from design to HTML, CSS, Javascript and Node.js</p>
+  <div id="about-me" class="container" >
+    <div data-aos="fade-up-right"  data-aos-duration="500"><img src="./img/favpng_avatar-user-software-developer.png" alt="" srcset=""></div>
+    <div  data-aos="fade-up" data-aos-duration="500"><h2 >Hi I'm chihab. Nice to meet you.</h2></div>
+    <div  data-aos="fade-down" data-aos-duration="500">
+      <p>I'm a freelancer Working remotely on projects for clients from all over the world</p>
+      <p>I have a multiple set of skills from design to HTML, CSS, Javascript and Node.js</p>
+    </div>
   </div>
   <!-- about-me end -->
 
   <!-- skills start -->
   <div id="skills" class="container">
-    <h1>SKILLS</h1>
+    <div data-aos="flip-up" data-aos-duration="800" >
+      <h1 >SKILLS</h1>
+    </div>
+    
     <!-- HTML CSS Javascript ExpressJs NodeJS github visualCodeStudio Bootstrap 
     put icons 
     -->
     <div class="skills-icons">
 
         
-        <div>
+        <div data-aos="flip-left" data-aos-duration="250" data-aos-delay="800">
           <img src="./img/output-onlinepngtools(3).png" alt="html">
           <h4>HTML</h4>
         </div>
-        <div>
+        <div data-aos="flip-left" data-aos-duration="250" data-aos-delay="1100">
           <img src="./img/output-onlinepngtools.png" alt="css">
           <h4>CSS</h4>
         </div>
-        <div>
+        <div data-aos="flip-left" data-aos-duration="280" data-aos-delay="1400">
           <img src="./img/kisspng-bootstrap.png" alt="Booststrap">
           <h4>BOOSTSTRAP</h4>
         </div>
-        <div>
+        <div data-aos="flip-left" data-aos-duration="280" data-aos-delay="1700">
           <img src="./img/output-onlinepngtools(4).png" alt="Javascript">
           <h4>Javascript</h4>
         </div>
-        <div>
+        <div data-aos="flip-left" data-aos-duration="280" data-aos-delay="2000">
           <img src="./img/output-onlinepngtools(6).png" alt="NodeJs">
           <h4>NODE JS</h4>
         </div>
-        <div>
+        <div data-aos="flip-left" data-aos-duration="280" data-aos-delay="2300">
           <img src="./img/output-onlinepngtools(8).png" alt="ExpressJs">
           <h4>ExpressJs</h4>
         </div>
-        <div>
+        <div data-aos="flip-left" data-aos-duration="280" data-aos-delay="2550">
           <img src="./img/output-onlinepngtools(9).png" alt="MongoDB">
           <h4>MONGODB</h4>
         </div>
-        <div>
+        <div data-aos="flip-left" data-aos-duration="280" data-aos-delay="2800">
           <img src="./img/output-onlinepngtools(2).png" alt="Github">
           <h4>GITHUB</h4>
         </div>
-        <div>
+        <div data-aos="flip-left" data-aos-duration="280" data-aos-delay="3000">
           <img src="./img/output-onlinepngtools(7).png" alt="visual Code Studio">
           <h4>Visual Code Studio</h4>
         </div>
@@ -103,23 +131,30 @@
   <!-- skills end -->
 
   <!-- latest work start -->
-  <div id="latest-work" class="container">
+  <div id="latest-work" class="container" data-aos="zoom-in" data-aos-duration="600">
     <h1>Latest Work</h1>
     <p>To Be Updated Soon...</p>
     
   </div>
   <!-- latest work end -->
+
+  <!-- testimonials start -->
   <div id="testimonials">
-    <h1>Testimonials</h1>
-    <div class="my-clients">
+    <div data-aos="zoom-in-up" data-aos-duration="800">
+      <h1>Testimonials</h1>
+    </div>
+    
+    <div class="my-clients" data-aos="zoom-in-up" data-aos-duration="800">
       
         <img src="./img/output-onlinepngtools-clients.png" alt="client">
         <h2>John Doe</h2>
         <p>&#8220;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic id voluptates sit magni fuga sed, consectetur eos minima adipisci pariatur.&#8221;</p>
     </div>
   </div>
+  <!-- testimonials end -->
+  
   <!-- contact me start  -->
-  <div id="contact-me">
+  <div id="contact-me"  data-aos="zoom-out-down" data-aos-duration="800">
     
     <form action="">
       <h1>Contact Me</h1>
@@ -151,5 +186,8 @@
   <!-- footer end -->
   <!-- JS Script -->
   <script src="./js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
