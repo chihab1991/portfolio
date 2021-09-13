@@ -56,6 +56,7 @@ a {
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
   color: #fff;
+  z-index: 222;
 }
 .loader-wrapper h1 {
   font-size: 50px;
