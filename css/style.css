@@ -690,7 +690,7 @@ footer p {
   }
   #contact-me form {
     width: 80%;
-    height: 350px;
+    height: 400px;
   }
   #contact-me input,
   #contact-me textarea {
@@ -698,7 +698,7 @@ footer p {
     font-size: 0.75rem;
   }
   #contact-me textarea {
-    height: 100px !important;
+    height: 150px !important;
   }
   footer p {
     font-size: 0.75rem;
